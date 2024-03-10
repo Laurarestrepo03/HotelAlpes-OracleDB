@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05A9B163-23E7-E06F-974C-26E4AA091AA1" name="Consumen">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>EBF91C6D-D863-5E40-EB10-68FD5A7F205A</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cliente" id="0CC50383-4C31-5581-BCEB-C973A6205A20">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>7D8E5206-3186-29A2-95F1-455FE41AD352</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>E657DBC6-5803-3E39-4872-2053D9125D0D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="servicio" id="CADCB81B-BDD6-F88A-07C1-E1829325AA9B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>CBBD374A-A27F-254A-E3DB-3F345EFBCA4B</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>E7136FF4-5CC8-0084-5293-594AAB7E9501</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="7D0D01B0-4AA1-8542-3F96-950AC4385FC2">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>B1B804F8-AA7F-CE22-9216-77B54DBFBDCD</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="BE8D3FDF-F8BA-6F56-53D4-6B2ABDC32FDD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>BF520131-1492-85D0-45BE-A12951CD6912</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cuenta pagada" id="726614A4-3E47-CB40-DB27-E05611068F6E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>AC137C05-A160-CBE9-4A31-F84738B5487E</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<constraintName>ck_cuenta_pagada</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="Y" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="registrado por" id="C6CDFFE9-0034-075B-76A8-D6325C6C083E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>364606F3-7394-FB58-CA01-9366157485CB</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>E657DBC6-5803-3E39-4872-2053D9125D0D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="341ED2E8-1FBC-3181-A53D-6EBB61185CF8" name="Consumen PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>3BCC83AE-2F0F-B4C4-8927-BEB18A8E3037</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0CC50383-4C31-5581-BCEB-C973A6205A20</attributeRef>
+<attributeRef>CADCB81B-BDD6-F88A-07C1-E1829325AA9B</attributeRef>
+<attributeRef>7D0D01B0-4AA1-8542-3F96-950AC4385FC2</attributeRef>
+<attributeRef>BE8D3FDF-F8BA-6F56-53D4-6B2ABDC32FDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

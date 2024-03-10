@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D0DCCBF-AD37-2C3B-CA03-7FFB101C6A21" name="Servicios_Ofrecidos">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>8B056F0F-1016-E830-289D-398D3F9B79A9</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hotel" id="ADA04A99-9371-84EA-FBD5-DCA0016CBB88">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>48B23744-6190-E3FE-1A98-7C309FDC0B11</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="476BEB50-7B81-18CF-0C63-94C8DF69DE11" referredColumn="1E8BD34A-B308-E4A4-B5CC-47F46C4DB333"/>
+</associations>
+</Column>
+<Column name="servicio" id="309253FC-7CC9-F981-A1B7-2BB7FA229E0F">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>D1C55AF9-CA22-92AB-8C1E-CA86DF14F182</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AAA9A02-EEA8-17FE-21D5-ACF791C4F3C4" referredColumn="CB023508-5E57-2A9C-3F41-FECABEE74B43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22534AAE-C2D1-63C0-C922-72B8A3F22FA9" name="Servicios_Ofrecidos_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>CC914565-6C84-5A8C-E89B-333772BA0CDF</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADA04A99-9371-84EA-FBD5-DCA0016CBB88"/>
+<colUsage columnID="309253FC-7CC9-F981-A1B7-2BB7FA229E0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F692C65-7870-50D0-517B-04CCFE4FBAC1" name="Ser_Ofre_Ser_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>115B21BC-21AE-C307-EC48-891B9891923C</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="309253FC-7CC9-F981-A1B7-2BB7FA229E0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB740859-4DDC-92F3-27C0-59B078168592" name="SerOfre_Hot_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>5EE5A50F-902B-A6F3-7A62-66AFD8F4812D</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADA04A99-9371-84EA-FBD5-DCA0016CBB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

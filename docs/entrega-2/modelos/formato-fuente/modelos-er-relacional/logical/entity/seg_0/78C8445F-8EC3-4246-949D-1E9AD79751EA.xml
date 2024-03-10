@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="78C8445F-8EC3-4246-949D-1E9AD79751EA" name="Reservas">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>A4150ABF-63FB-10C3-031A-27663420D17A</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo reserva" id="508CFE94-C4D1-EE3C-9634-B8A7D31EC8A0">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>5FF7969D-A586-8245-4DAF-CC7735654EAB</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha entrada" id="214CA8B9-64B9-E4C5-62C7-C00B9550F4E5">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>77DDBBDA-6C00-9FE0-4D65-E62BAF83054F</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha salida" id="2F715F75-A8ED-2EDF-5776-9751A913AA46">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>FC418E1E-8967-5511-765B-B8D9192861A7</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num huespedes" id="83FFF3BF-9D02-E26B-C6D4-D4D724CBDAAD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>13A4FF55-B51D-B51C-5B4E-487954C379BD</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="D651203E-9968-FD02-213D-E277C00DF198">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>EA88F1DE-1673-A121-8CC0-C903B4C57066</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<constraintName>ck_estado</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="Entro" description=""/>
+<valueDef value="Por entrar" description=""/>
+<valueDef value="Salio con deuda" description=""/>
+<valueDef value="Salio sin deuda" description=""/>
+</listOfValues>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cliente reserva" id="FF91780C-EE02-B4F5-5B8B-7EB87484324B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>0BA05E8E-470C-2A67-3329-F7FA9B153139</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>E657DBC6-5803-3E39-4872-2053D9125D0D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="habitacion" id="9D5347C7-C8FB-B39C-7A3C-A138DBEF0B9E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>CD55D3A6-A5B0-3556-7E61-857648317949</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>E35E76B1-B3E8-9482-9B47-62363EE890F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan consumo" id="9E073876-9CCC-88CA-9287-C0BFB9E16006">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>916E463D-5FC7-E315-8B2A-199D0A9E4A78</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>EBB3A98D-92DC-23D8-B663-DE46D7733441</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D08E8A3C-62C0-10A1-535C-ED90C7E6FA72" name="Reservas PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>E316E833-2953-6A0F-296A-97CC3237A906</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>508CFE94-C4D1-EE3C-9634-B8A7D31EC8A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

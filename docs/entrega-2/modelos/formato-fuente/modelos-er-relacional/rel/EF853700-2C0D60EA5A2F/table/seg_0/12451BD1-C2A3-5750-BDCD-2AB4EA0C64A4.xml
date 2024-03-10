@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12451BD1-C2A3-5750-BDCD-2AB4EA0C64A4" name="Habitaciones">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>793F5B6E-18BC-A844-96B9-F96E79C9C612</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="num_habitacion" id="74030EF6-3B8C-DB2B-F7CE-8AB4CC6BEC11">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>E951CC44-845E-6105-2F69-E46AA99A4C6C</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo_noche" id="6F8EFAC8-3597-677F-0A18-0FAA1F4CCFC1">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>85B82896-E277-1D7E-1D2A-524F83556FEA</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="57F904B0-0C45-32B7-9187-F4E496E017BC">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>B2CFCB30-2154-56DF-CFF0-F92402495421</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75855B56-E49C-EA83-B175-8DD3C6C71EDF" referredColumn="25F8136A-E4D4-2088-4FC5-76AD72C79557"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF80766B-797C-CB09-85C3-E1C5D9C58B57" name="Habitaciones_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>0EFA1C90-4436-3B1D-44A3-75A0F053E4BD</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74030EF6-3B8C-DB2B-F7CE-8AB4CC6BEC11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="972C1ABC-5472-DC9C-E0C3-54CDC66FCD0B" name="Hab_Tipos_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>071074A3-92B8-452E-1A39-CA199EB22829</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57F904B0-0C45-32B7-9187-F4E496E017BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumos usuario</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container w-25 mt-4">
+        
+        <h3 class="card-header text-center" role='button' id="headingOne">
+            <a class="collapsed d-block" data-toggle="collapse" data-target="#busqueda"> Buscar por: </a>
+        </h3>
+
+        <div id="busqueda" class="collapse">
+            <form th:action="@{/consumen/usuario}" method="get">
+
+                <input type="hidden" name="rol" th:value="${param.rol}" />
+                
+                <label class="col-form-label">Usuario</label>
+                <input class="form-control" type="text" id="usuario"
+                name="usuario" value="" required/>
+
+                <label class="col-form-label">Consumido desde</label>
+                <input class="form-control" type="date" id="fecha_inicio"
+                name="fecha_inicio" value="" required/>
+
+                <label class="col-form-label">Consumido hasta</label>
+                <input class="form-control" type="date" id="fecha_fin"
+                name="fecha_fin" value="" required/>
+                
+                <br>
+                
+                <div class="text-center mb-4">
+                    <button type="submit" class="btn btn-secondary mr-1">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="text-center">
+        <table class="table table-hover table-bordered mb-4 mt-4">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>¿Cuenta pagada?</th>
+                    <th>Registrado por</th>
+                </tr>
+            </thead>
+            <th:block th:each="consumo:${consumosUsuario}">
+                <tr>
+                    <td th:text="${consumo.pk.usuario}"></td>
+                    <td th:text="${consumo.pk.servicio}"></td>
+                    <td th:text="${consumo.pk.fecha}"></td>
+                    <td th:text="${consumo.pk.hora}"></td>
+                    <td th:text="${consumo.cuenta_pagada}"></td>
+                    <td th:text="${consumo.registrado_por}"></td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="text-center mb-4">
+            <a th:href="@{/consumen(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+        </div>
+    </div>
+    
+</body>
+</html>

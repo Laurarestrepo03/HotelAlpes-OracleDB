@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="208E7173-1976-C39C-BC19-448C64D1B332" name="Acompaniantes">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>6D380E00-CD59-1DD7-5FF2-A2B25B954497</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num documento" id="94ACC99F-41B9-592B-3BEB-EED6A108F092">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>38924748-5839-5E0A-C2EA-16D40C1034DD</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo documento" id="F6210BA0-2AE3-2680-7B5A-8A924814C27A">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>0313461D-6AC7-2ED1-CF0E-DD85B69B1A1C</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<constraintName>ck_tipo_doc_acom</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="CC" description=""/>
+<valueDef value="CE" description=""/>
+<valueDef value="TI" description=""/>
+</listOfValues>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reserva" id="ECE5631D-09E6-D4AA-9E08-5B8B61F5DBDB">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>F0013549-EC93-CFE7-F73D-1814118BB912</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>F4538890-1D94-C27A-661E-0E7215C6E328</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11D698BF-9850-843A-6F50-26E2C679DEF6" name="Acompaniantes PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>7F58D811-EBBC-6551-C1A8-3D57397217F1</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94ACC99F-41B9-592B-3BEB-EED6A108F092</attributeRef>
+<attributeRef>ECE5631D-09E6-D4AA-9E08-5B8B61F5DBDB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

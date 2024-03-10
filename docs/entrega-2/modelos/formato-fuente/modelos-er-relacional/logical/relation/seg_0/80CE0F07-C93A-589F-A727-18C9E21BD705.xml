@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SerRen_Ser_FK" directorySegmentName="seg_0" id="80CE0F07-C93A-589F-A727-18C9E21BD705">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>97CEA070-90B0-2DDC-FA58-765576460788</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>C75A8CC4-0ED3-63F0-C96F-8AEDC3D447C7</sourcePk>
+<dominantRole>34DEF6A2-FB5E-5480-4F30-3330DEF69500</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>34DEF6A2-FB5E-5480-4F30-3330DEF69500</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>60CD8955-0270-B4B4-24F3-A1BBC080D2D7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

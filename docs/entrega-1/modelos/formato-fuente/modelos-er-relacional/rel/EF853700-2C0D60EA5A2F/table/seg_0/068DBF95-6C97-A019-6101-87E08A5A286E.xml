@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="068DBF95-6C97-A019-6101-87E08A5A286E" name="Usuarios">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>393680ED-2DC4-FA76-8DBE-67FE2EB09CE9</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="num_documento" id="5442C29A-5317-6258-2FE7-6CCBCF18A39E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>637E2362-A190-374D-03A1-9D289F9B7B00</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E87514EF-1A94-0896-F90E-BAC3BD17498A">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>F92B2D77-CE8C-7D7C-A3FC-61E9E2B6D966</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="BD52201D-BF57-5ED3-9DBD-E1DDA5FB69E9">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>C8D85535-8959-A99E-B1AC-3DAE8F00624E</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="03ACDC2C-086F-3CD7-0996-83785A1121C8">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>68F48938-9CE2-733C-8595-DD2D8EAD7853</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7902B341-48F6-2801-54F2-03F88F6CB784" referredColumn="B8F19A2B-A433-0ED0-6832-04762D009574"/>
+</associations>
+</Column>
+<Column name="hotel" id="CD69A241-5746-7F0C-89CA-446FD1B2DB12">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>6A1CB3C9-18C7-5B83-5DB5-ED1778CF9703</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4A1C189-9599-3173-F0BD-B0688E80DAB3" referredColumn="1E8BD34A-B308-E4A4-B5CC-47F46C4DB333"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D9A60C23-1213-11F4-7E1E-D261329F61E5" name="Usuarios_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>4CBEC04F-268C-61B0-5D2F-D02C38E682B4</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5442C29A-5317-6258-2FE7-6CCBCF18A39E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D127355-2EBF-F655-482F-6D12E71288E4" name="Usu_Hot_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>46D615D5-E9A0-5950-20B5-C202E1559391</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD69A241-5746-7F0C-89CA-446FD1B2DB12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D9A1DA9-04FB-D55A-3B34-669F82033104" name="Usu_Tipos_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>61C21137-2055-B6CA-8444-F3D33C6EA176</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03ACDC2C-086F-3CD7-0996-83785A1121C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

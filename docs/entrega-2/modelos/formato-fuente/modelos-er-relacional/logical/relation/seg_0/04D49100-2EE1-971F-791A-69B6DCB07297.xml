@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Acom_Res_FK" directorySegmentName="seg_0" id="04D49100-2EE1-971F-791A-69B6DCB07297">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>0EA27993-81B1-6273-E9AE-6486E0186B16</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>D08E8A3C-62C0-10A1-535C-ED90C7E6FA72</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>78C8445F-8EC3-4246-949D-1E9AD79751EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B024B407-64E8-1F1B-2A61-342E5DD324EE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ACCAAEF1-F151-B2D6-1172-BACE639CA09C" name="Reservas Servicio">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>7C6C3DCF-D9F4-28DF-DB60-1FB4F15E67CE</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id reserva servicio" id="27D6078B-E60C-28C8-1CBA-627744014D51">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>BC831DC8-3D8F-8E08-E5B1-F2AB5712416F</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia reserva" id="6EE18871-F7FB-364D-4D58-E584CD62B3AA">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>D67E8168-E0D3-F1B9-AD81-067949882A31</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora inicio" id="D096814B-09D0-73B7-C8CE-76B3D5A95EA6">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>B841A42A-1485-C511-82FB-AD4AC113EAE0</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora fin" id="9F7938DF-AD83-0994-A7A6-9B420A509BB2">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>0DF5FF10-68D6-0B44-6219-58437E870E48</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="servicio comercial" id="D4E0739E-CFE4-CCF4-2A2D-B06CDC6AAD5F">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>7DD6AFB1-3344-8E22-789A-065B5E61C112</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5D1C271D-2D9D-9C09-5CF4-0BCA48C73A48</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="servicio renta" id="ABEEAD42-AAD9-1316-A4D5-69B6AA2EA336">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>F2493149-C67B-E276-4E15-95AAE8ECCE0C</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E8E7B7A3-509C-5545-74CB-F1961B0EB9A4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cliente" id="63E7D175-0818-F3DB-D9CE-A2C93BA145BD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>9A886F7E-DD74-DBA8-D187-C2F4C50E5318</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<referedAttribute>7DA3863D-E00B-C244-2C54-CF54CD917EDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B46EAE7-BFEB-F856-ED29-DAAFD67FB5B5" name="Reservas Servicio PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>C6F622A8-663A-D83F-F602-A1F03AAA46BB</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27D6078B-E60C-28C8-1CBA-627744014D51</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

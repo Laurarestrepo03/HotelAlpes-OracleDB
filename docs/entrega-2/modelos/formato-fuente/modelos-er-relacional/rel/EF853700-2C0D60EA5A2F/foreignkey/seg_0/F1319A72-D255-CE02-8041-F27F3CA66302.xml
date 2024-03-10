@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1319A72-D255-CE02-8041-F27F3CA66302" containerWithKeyObject="A6E9B29E-304E-0743-3DC2-42C8A5B3E02A" localFKIndex="F37FEC2F-898C-E18B-4DE9-9D6E8F45CF24" name="DotIn_Dot_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:51:36 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<referredTableLongName>Dotaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F2C57BCD-9466-A538-FD7F-DB7F23135373</referredTableID>
+<keyObject>4CD50160-34AC-BE6B-83E1-6B33BF4F6F30</keyObject>
+<referredKeyID>4CD50160-34AC-BE6B-83E1-6B33BF4F6F30</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_dotacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

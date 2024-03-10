@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C6C3DCF-D9F4-28DF-DB60-1FB4F15E67CE" name="Reservas_Servicio">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>E98C938B-C172-3C96-E1D4-100B13ED8972</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reserva_servicio" id="BC831DC8-3D8F-8E08-E5B1-F2AB5712416F">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>336A9A96-1F19-985A-9FDE-4A4531247202</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_reserva" id="D67E8168-E0D3-F1B9-AD81-067949882A31">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>44734B6C-1023-E083-92FA-5D766D00777C</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_inicio" id="B841A42A-1485-C511-82FB-AD4AC113EAE0">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>FCD89F2A-934C-3C73-F650-AB19FAB7BBD6</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_fin" id="0DF5FF10-68D6-0B44-6219-58437E870E48">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>F708BF52-0CE5-BBCB-3408-E05A860AE4B7</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="servicio_comercial" id="AC74B453-8814-7FD2-1DB6-C54F92C774B6">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>343C90D1-861C-D6FE-7530-02DE947B1319</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E39F88F-34AD-DE4D-FB08-95E1CC2CD6B4" referredColumn="0DC2B1E4-3070-D193-E1EC-7DE90C72480E"/>
+</associations>
+</Column>
+<Column name="servicio_renta" id="3CA5344E-9BA6-EB54-E0E7-5906B882CA63">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>4A0A828A-B058-764E-E01E-269C62FADA41</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EE56A67-C2A5-FC89-F5AB-762A2012A911" referredColumn="0AB914BE-D211-930B-B85D-D19B32D5BD51"/>
+</associations>
+</Column>
+<Column name="cliente" id="D6C639FF-2E2A-5172-2022-3E9EC6583FAE">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 00:56:47 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61DB9F56-81FE-CE97-49D2-9E921088DAF4" referredColumn="5442C29A-5317-6258-2FE7-6CCBCF18A39E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6F622A8-663A-D83F-F602-A1F03AAA46BB" name="Reservas_Servicio_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>F68610B4-F9EB-66EE-94D8-4FBCC074DEE6</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC831DC8-3D8F-8E08-E5B1-F2AB5712416F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43A9825A-1DC0-7F55-CD3A-3588648480F9" name="ResSer_SerCom_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>F303F7B3-156E-A446-3AD4-CEAEAC0A8A16</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC74B453-8814-7FD2-1DB6-C54F92C774B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="317AA797-FE10-C061-692F-C4723C5A7249" name="ResSer_ServRen_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>387F9206-D748-96BB-BD65-52457F3A6D02</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CA5344E-9BA6-EB54-E0E7-5906B882CA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C5777AC-4480-7A42-0D39-2ABFC3CA3F7D" name="Res_Ser_Usu_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 00:56:47 UTC</createdTime>
+<generatorID>4CBEC04F-268C-61B0-5D2F-D02C38E682B4</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6C639FF-2E2A-5172-2022-3E9EC6583FAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

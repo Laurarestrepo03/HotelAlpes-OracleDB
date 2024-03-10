@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76FA5183-99C2-7B2C-93B5-14ADDCE755A9" name="Servicios_Limpieza">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>4086807D-4BE0-8D37-2525-46BA1DE61768</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo" id="CB851464-E16C-D586-CAE1-ADC74AA96117">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>201B554D-DB0D-7731-5521-66762922FF07</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<constraintName>ck_tipo_ser_lim</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfValues>
+<valueDef value="10" description=""/>
+<valueDef value="11" description=""/>
+<valueDef value="12" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C496A0B-D951-0F36-B4DE-9FE15E687A2B" referredColumn="CB023508-5E57-2A9C-3F41-FECABEE74B43"/>
+</associations>
+</Column>
+<Column name="cantidad_prendas" id="8A4FB73E-B89D-D797-8101-B6918B37C80D">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>1636FC5E-697B-F374-A915-C68084F4DC42</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA9A4F04-88E6-76C4-F7AA-D335E2AC9BCA" name="Servicios_Limpieza_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>9398BD5F-9F39-E515-2D7E-E8121D4D0234</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB851464-E16C-D586-CAE1-ADC74AA96117"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="358198AC-A859-AF1B-880A-BAFF62ED16A7" name="SerLim_Ser_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>44B9C6A4-6C20-4C1B-9839-905667DBB926</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB851464-E16C-D586-CAE1-ADC74AA96117"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

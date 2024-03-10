@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Hab_Tipos_FK" directorySegmentName="seg_0" id="55C642E9-19B6-C9F7-675E-4F189AF17BD9">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>75855B56-E49C-EA83-B175-8DD3C6C71EDF</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>E55B80D3-2378-CB3C-CFB9-94F033E1FB4D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6C9D6712-9EFC-B882-7BBE-E9B735CB590A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>20097982-0809-8C5A-B924-E46EEE918615</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmento</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div th:fragment="semanaHabitacion(titulo)" class="text-center">
+        <h1 class="mt-4 mb-4" th:text="${titulo}"></h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Inicio semana</th>
+                    <th>Fin semana</th>
+                    <th>Número de habitación</th>
+                </tr>
+            </thead>
+            <th:block th:each="semana:${semanas}">
+                <tr>
+                    <td th:text="${semana.inicio_semana}"></td>
+                    <td th:text="${semana.fin_semana}"></td>
+                    <td th:text="${semana.num_habitacion}"></td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4 mb-4">
+            <a th:href="@{/habitaciones(rol=${param.rol})}" class="btn btn-primary">Volver atrás</a>
+        </div>
+    </div>
+    
+</body>
+</html>

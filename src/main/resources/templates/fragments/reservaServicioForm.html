@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmento</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div th:fragment="reservaServicioForm(titulo)" class="container w-25 mt-4">
+        <h1 class="text-center" th:text="${titulo}"></h1>
+
+        <form>
+
+            <label class="col-form-label">Fecha</label>
+            <input class="form-control" type="date" id="dia_reserva"
+            name="dia_reserva" required th:value="${reservaServicio.dia_reserva}" />
+
+            <label class="col-form-label">Hora inicio</label>
+            <input class="form-control" type="text" id="hora_inicio"
+            name="hora_inicio" required th:value="${reservaServicio.hora_inicio}" />
+
+            <label class="col-form-label">Hora fin</label>
+            <input class="form-control" type="text" id="hora_fin"
+            name="hora_fin" required th:value="${reservaServicio.hora_fin}" />
+
+            <label class="col-form-label" for="servicio_comercial">Servicio comercial</label>
+            <select class="form-control"  id="servicio_comercial" name="servicio_comercial.pk.tipo.pk.tipo.id_tipo">
+                <option></option>
+                <th:block th:each="servicioComercial : ${serviciosComerciales}">
+                    <option th:value="${servicioComercial.pk.tipo.pk.tipo.id_tipo}" th:text="${servicioComercial.pk.tipo.pk.tipo.nombre}" 
+                    th:selected="${reservaServicio != null and reservaServicio.servicio_comercial != null and 
+                    reservaServicio.servicio_comercial.pk.tipo.pk.tipo.id_tipo == servicioComercial.pk.tipo.pk.tipo.id_tipo}"></option>
+                </th:block>
+            </select>
+
+            
+            <label class="col-form-label" for="servicio_renta">Servicio renta</label>
+            <select class="form-control"  id="servicio_renta" name="servicio_renta.pk.tipo.pk.tipo.id_tipo">
+                <option></option>
+                <th:block th:each="servicioRenta : ${serviciosRenta}">
+                    <option th:value="${servicioRenta.pk.tipo.pk.tipo.id_tipo}" th:text="${servicioRenta.pk.tipo.pk.tipo.nombre}" 
+                    th:selected="${reservaServicio != null and reservaServicio.servicio_renta != null and 
+                    reservaServicio.servicio_renta.pk.tipo.pk.tipo.id_tipo == servicioRenta.pk.tipo.pk.tipo.id_tipo}"></option>
+                </th:block>
+            </select>
+
+            <label class="col-form-label">Cliente</label>
+            <input class="form-control" type="text" id="cliente"
+            name="cliente" required th:value="${reservaServicio.cliente}" />
+
+            <br>
+
+            <div class="text-center mb-4">
+                <a th:href="@{/reservasServicio(rol=${param.rol})}" class="btn btn-primary mr-1">Cancelar</a>
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

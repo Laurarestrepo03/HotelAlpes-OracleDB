@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de servicios</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="mt-4 mb-4">Consumo de servicios</h1>
+        <div class="mb-4">
+            <a th:if="${#strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" th:href="@{consumen/usuario(rol=${param.rol})}" class="btn btn-info mr-1">Consumos usuario</a>
+            <a th:if="${#strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" th:href="@{consumen/fechasMayorIngreso(rol=${param.rol})}" class="btn btn-info mr-1">Fechas mayor ingreso</a>
+            <a th:if="${#strings.trim(param.rol) == '2' or #strings.trim(param.rol) == '5'}" th:href="@{consumen/consumoClientes(rol=${param.rol})}" class="btn btn-info mr-1">Consumo clientes</a>
+            <a th:if="${#strings.trim(param.rol) == '2' or #strings.trim(param.rol) == '5'}" th:href="@{consumen/ningunConsumo(rol=${param.rol})}" class="btn btn-info">Ningún consumo</a>
+        </div>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>¿Cuenta pagada?</th>
+                    <th>Registrado por</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <th:block th:each="consume:${consumen}">
+                <tr>
+                    <td th:text="${consume.pk.cliente}"></td>
+                    <td th:text="${consume.pk.servicio.pk.tipo.nombre}"></td>
+                    <td th:text="${consume.pk.fecha}"></td>
+                    <td th:text="${consume.pk.hora}"></td>
+                    <td th:text="${consume.cuenta_pagada}"></td>
+                    <td th:text="${consume.registrado_por}"></td>
+                    <td>
+                        <a th:if="${#strings.trim(param.rol) == '3'}" th:href="@{consumen/{cliente}/{servicio}/{fecha}/{hora}/edit(cliente=${consume.pk.cliente.num_documento}, 
+                        servicio=${consume.pk.servicio.pk.tipo.id_tipo}, fecha=${consume.pk.fecha}, hora=${consume.pk.hora}, rol=${param.rol})}">Editar</a>
+                        <a th:if="${#strings.trim(param.rol) == '3'}" th:href="@{consumen/{cliente}/{servicio}/{fecha}/{hora}/delete(cliente=${consume.pk.cliente.num_documento}, 
+                        servicio=${consume.pk.servicio.pk.tipo.id_tipo}, fecha=${consume.pk.fecha}, hora=${consume.pk.hora}, rol=${param.rol})}"
+                        onClick="return confirm('¿Estás seguro de borrar este consumo?')">Borrar</a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4 mb-4">
+            <a th:href="@{/menu(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+            <a th:if="${#strings.trim(param.rol) == '3'}" th:href="@{consumen/new(rol=${param.rol})}" class="btn btn-primary">Añadir consumo</a>
+        </div>
+    </div>
+    
+</body>
+</html>

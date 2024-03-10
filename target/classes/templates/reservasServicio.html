@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas servicios</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="mt-4 mb-4">Reservas de servicios</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Hora inicio</th>
+                    <th>Hora fin</th>
+                    <th>Servicio comercial</th>
+                    <th>Servicio renta</th>
+                    <th>Cliente</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <th:block th:each="reservaServicio:${reservasServicio}">
+                <tr>
+                    <td th:text="${reservaServicio.id_reserva_servicio}"></td>
+                    <td th:text="${reservaServicio.dia_reserva}"></td>
+                    <td th:text="${reservaServicio.hora_inicio}"></td>
+                    <td th:text="${reservaServicio.hora_fin}"></td>
+                    <td th:text="${reservaServicio.servicio_comercial != null ? reservaServicio.servicio_comercial.pk.tipo.pk.tipo.nombre : ''}"></td>
+                    <td th:text="${reservaServicio.servicio_renta != null ? reservaServicio.servicio_renta.pk.tipo.pk.tipo.nombre : ''}"></td>
+                    <td th:text="${reservaServicio.cliente}"></td>
+                    <td>
+                        <a th:href="@{reservasServicio/{id_reserva_servicio}/edit(id_reserva_servicio=${reservaServicio.id_reserva_servicio}, rol=${param.rol})}">Editar</a>
+                        <a th:href="@{reservasServicio/{id_reserva_servicio}/delete(id_reserva_servicio=${reservaServicio.id_reserva_servicio}, rol=${param.rol})}"
+                        onClick="return confirm('¿Estás seguro de borrar esta reserva de servicio?')">Borrar</a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4">
+            <a th:href="@{/menu(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+            <a th:href="@{reservasServicio/new(rol=${param.rol})}" class="btn btn-primary">Añadir reserva de servicio</a>
+        </div>
+    </div>
+    
+</body>
+</html>

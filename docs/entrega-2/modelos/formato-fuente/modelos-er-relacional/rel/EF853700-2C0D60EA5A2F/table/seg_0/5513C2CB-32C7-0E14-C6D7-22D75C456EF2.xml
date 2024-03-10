@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5513C2CB-32C7-0E14-C6D7-22D75C456EF2" name="Catalogo_Productos">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:57:45 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="servicio_comercial" id="D7163D96-7483-2134-C19B-E8527841B584">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:58:28 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="586B8695-A56C-8A6F-3086-2B249B60E0B3" referredColumn="0DC2B1E4-3070-D193-E1EC-7DE90C72480E"/>
+</associations>
+</Column>
+<Column name="producto" id="EA42C8B1-1A46-60CD-1DDE-39358FA95B2B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:59:30 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F0F308-DD91-39DD-4C00-52BE61813097" referredColumn="3E04EA4C-B64D-6B11-75E0-662486CB3207"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BC8F52D-0182-B69F-7B24-5D2819B94FD0" name="Catalogo_Productos_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:58:50 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7163D96-7483-2134-C19B-E8527841B584"/>
+<colUsage columnID="EA42C8B1-1A46-60CD-1DDE-39358FA95B2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="275FB42A-13C1-F0A5-FEDB-DF2B2657D387" name="CatProd_SerCom_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:58:28 UTC</createdTime>
+<generatorID>A8492F01-E1A0-4688-2A30-9BF4071E69EB</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7163D96-7483-2134-C19B-E8527841B584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE3A1607-5896-3F48-DFCF-B746941992A7" name="CatProd_Prod_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 02:59:30 UTC</createdTime>
+<generatorID>6487B061-1FDF-BE8A-4A4D-9FC686612BBD</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA42C8B1-1A46-60CD-1DDE-39358FA95B2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

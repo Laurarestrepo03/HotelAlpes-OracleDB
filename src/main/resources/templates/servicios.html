@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="mt-4 mb-4">Servicios</h1>
+        <div class="mb-4">
+            <a th:href="@{servicios/populares(rol=${param.rol})}" class="btn btn-info mr-1">Populares</a>
+            <a th:href="@{servicios/caracteristicas(rol=${param.rol})}" class="btn btn-info mr-1">Filtrar por características</a>
+            <a th:href="@{servicios/pocaDemanda(rol=${param.rol})}" class="btn btn-info mr-1">Poca demanda</a>
+            <a th:if="${#strings.trim(param.rol) == '5'}" th:href="@{servicios/masConsumidos(rol=${param.rol})}" class="btn btn-info mr-1">Más consumidos</a>
+            <a th:if="${#strings.trim(param.rol) == '5'}" th:href="@{servicios/menosConsumidos(rol=${param.rol})}" class="btn btn-info">Menos consumidos</a>
+        </div>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Capacidad</th>
+                    <th>Tipo cobro</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <th:block th:each="servicio:${servicios}">
+                <tr>
+                    <td th:text="${servicio.pk.tipo.nombre}"></td>
+                    <td th:text="${servicio.capacidad}"></td>
+                    <td th:text="${servicio.tipo_cobro}"></td>
+                    <td th:text="'$' + ${servicio.precio}"></td>
+                    <td>
+                        <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{servicios/{tipo}/edit(tipo=${servicio.pk.tipo.id_tipo}, rol=${param.rol})}">Editar</a>
+                        <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{servicios/{tipo}/delete(tipo=${servicio.pk.tipo.id_tipo}, rol=${param.rol})}"
+                        onClick="return confirm('¿Estás seguro de borrar este servicio?')">Borrar</a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4 mb-4">
+            <a th:href="@{/menu(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+            <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{servicios/new(rol=${param.rol})}" class="btn btn-primary">Añadir servicio</a>
+        </div>
+    </div>
+    
+</body>
+</html>

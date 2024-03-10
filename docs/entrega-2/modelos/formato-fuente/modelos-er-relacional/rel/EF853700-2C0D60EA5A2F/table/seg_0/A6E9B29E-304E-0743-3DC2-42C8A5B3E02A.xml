@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6E9B29E-304E-0743-3DC2-42C8A5B3E02A" name="Dotaciones_Incluidas">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:50:43 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo_habitacion" id="17C119B4-9034-022B-B5A4-DEF018C72BF9">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 00:50:43 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AB0AE91-C790-0D88-B747-EC3CF521480D" referredColumn="25F8136A-E4D4-2088-4FC5-76AD72C79557"/>
+</associations>
+</Column>
+<Column name="dotacion" id="80C183FE-5C26-C0FC-3798-06E999BE050B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:51:36 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1319A72-D255-CE02-8041-F27F3CA66302" referredColumn="44893080-4AE1-6D6C-CB3E-7F89F2D00921"/>
+</associations>
+</Column>
+<Column name="cantidad" id="288102ED-2F43-76EF-A3BA-9A712361CE80">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 00:40:01 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A706D35A-71FF-A7D2-4C68-93D1E6766D16" name="Dotacion_Incluida_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:51:32 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80C183FE-5C26-C0FC-3798-06E999BE050B"/>
+<colUsage columnID="17C119B4-9034-022B-B5A4-DEF018C72BF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F37FEC2F-898C-E18B-4DE9-9D6E8F45CF24" name="DotIn_Dot_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:51:36 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80C183FE-5C26-C0FC-3798-06E999BE050B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09C72A97-46EB-7CDA-4A86-5E29B1E4E366" name="DotIn_TipoHab_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 00:50:43 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C119B4-9034-022B-B5A4-DEF018C72BF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

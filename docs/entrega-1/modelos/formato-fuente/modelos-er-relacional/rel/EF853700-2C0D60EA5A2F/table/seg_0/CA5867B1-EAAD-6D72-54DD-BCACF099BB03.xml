@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA5867B1-EAAD-6D72-54DD-BCACF099BB03" name="Servicios">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>3012285F-52C7-423F-08A9-DE2549D165CF</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo" id="CB023508-5E57-2A9C-3F41-FECABEE74B43">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>5A8DC9CB-FACF-7BB1-B828-0CFB35E0F306</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3248130-D11D-053D-F4E0-9270A2CB07AF" referredColumn="C3CB8F44-3F2C-91EA-070C-865CC3C26435"/>
+</associations>
+</Column>
+<Column name="capacidad" id="0A59E9E6-0D42-AC62-6F56-52762BE955FB">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>E0987803-42E4-40E2-B84D-80516AB6F1ED</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_cobro" id="DADFF9DE-60EF-A07D-23F0-FC63F136C9B5">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>284B04AE-BE74-FCF8-5CFC-0E81E74484FE</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<constraintName>ck_tipo_cobro</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="Alojamiento" description=""/>
+<valueDef value="Gratuito" description=""/>
+<valueDef value="Habitacion" description=""/>
+<valueDef value="Por dia" description=""/>
+</listOfValues>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD68A670-F277-2B35-B69C-9D8BB8286BB0" name="Servicios_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>24AD1F7B-7468-8609-4E34-2E38F4C7BAD1</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB023508-5E57-2A9C-3F41-FECABEE74B43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C91730DA-1E67-7220-F2DD-80B39B74C856" name="Ser_Tipos_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>B55A4D00-AEBB-AC69-4255-2F035A50C7B6</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB023508-5E57-2A9C-3F41-FECABEE74B43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

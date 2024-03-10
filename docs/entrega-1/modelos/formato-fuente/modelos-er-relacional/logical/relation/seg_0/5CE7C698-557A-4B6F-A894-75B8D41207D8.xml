@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Hab_Hot_FK" directorySegmentName="seg_0" id="5CE7C698-557A-4B6F-A894-75B8D41207D8">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>0997D740-7DB7-2297-8BB9-B0A939B71C84</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>D0C9792F-B026-5AD5-8F20-F07782B19758</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC9381BA-4347-E39A-C34B-062A9EA79ACA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2529AF13-B372-FA42-A5C8-C9A26B8AA894</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

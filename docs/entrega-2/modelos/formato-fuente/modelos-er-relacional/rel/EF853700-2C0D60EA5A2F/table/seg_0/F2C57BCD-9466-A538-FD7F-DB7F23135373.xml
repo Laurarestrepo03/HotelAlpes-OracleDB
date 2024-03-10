@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2C57BCD-9466-A538-FD7F-DB7F23135373" name="Dotaciones">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:43:30 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dotacion" id="44893080-4AE1-6D6C-CB3E-7F89F2D00921">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:44:03 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="3E51EE2F-548F-E502-E698-14A3C5B43C9F">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:46:06 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CD50160-34AC-BE6B-83E1-6B33BF4F6F30" name="Dotaciones_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-25 23:44:03 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44893080-4AE1-6D6C-CB3E-7F89F2D00921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

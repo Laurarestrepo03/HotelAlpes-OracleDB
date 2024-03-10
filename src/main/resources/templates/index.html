@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel de los Alpes</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="mb-4 mt-4">Hotel de los Alpes</h1>
+            <img class="mb-4" th:src="@{/images/bellman.png}" width="250" alt="bellman"/>
+            <div class="mb-4">
+                <div class="mb-3">
+                    <a th:if="${#strings.trim(param.rol) == '4'}" 
+                    th:href="@{/tiposUsuario(rol=${param.rol})}" class="btn btn-primary mr-1">Tipos de usuario</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" 
+                    th:href="@{/usuarios(rol=${param.rol})}" class="btn btn-primary mr-1">Usuarios</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '4'}" 
+                    th:href="@{/tiposHabitacion(rol=${param.rol})}" class="btn btn-primary mr-1">Tipos de habitación</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" 
+                    th:href="@{/habitaciones(rol=${param.rol})}" class="btn btn-primary">Habitaciones</a>
+                </div>
+                <div>
+                    <a th:if="${#strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" 
+                    th:href="@{/servicios(rol=${param.rol})}" class="btn btn-primary mr-1">Servicios</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '4'}" 
+                    th:href="@{/planesConsumo(rol=${param.rol})}" class="btn btn-primary mr-1">Planes de consumo</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '1' or #strings.trim(param.rol) == '2'}" 
+                    th:href="@{/reservas(rol=${param.rol})}" class="btn btn-primary mr-1">Reservas</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '1'}" 
+                    th:href="@{/reservasServicio(rol=${param.rol})}" class="btn btn-primary mr-1">Reservas servicios</a>
+
+                    <a th:if="${#strings.trim(param.rol) == '2' or #strings.trim(param.rol) == '3' or #strings.trim(param.rol) == '4' or #strings.trim(param.rol) == '5'}" 
+                    th:href="@{/consumen(rol=${param.rol})}" class="btn btn-primary">Consumo de servicios</a>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a th:href="@{/}" class="btn btn-outline-primary mr-1">Cambiar rol</a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBF91C6D-D863-5E40-EB10-68FD5A7F205A" name="Consumen">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>1690C53C-4A0D-4AAA-989B-C23DDE563ABF</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cliente" id="6DD79EDC-BCAA-8426-0F26-379E4369B150">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>53DC3C9F-795A-2C55-7B10-E3A151C70901</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46D52ED5-FFD4-A9FA-DEA6-579FC50F79D0" referredColumn="5442C29A-5317-6258-2FE7-6CCBCF18A39E"/>
+</associations>
+</Column>
+<Column name="servicio" id="CEAFA6ED-29D4-49A5-2391-76DD976B09F3">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>94AEC0A8-DD4C-9CBF-090E-7A69FF738BDE</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3503AE6-2CEF-68C6-DC4A-34262CD41D2E" referredColumn="CB023508-5E57-2A9C-3F41-FECABEE74B43"/>
+</associations>
+</Column>
+<Column name="fecha" id="B1B804F8-AA7F-CE22-9216-77B54DBFBDCD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>E0C45482-D73E-1BA2-530E-67DC113302AE</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="BF520131-1492-85D0-45BE-A12951CD6912">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-06 22:02:46 UTC</createdTime>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_pagada" id="AC137C05-A160-CBE9-4A31-F84738B5487E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>1D9B48AE-7DC0-8463-260E-B09F1F0FFFC7</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<constraintName>ck_cuenta_pagada</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="Y" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BCC83AE-2F0F-B4C4-8927-BEB18A8E3037" name="Consumen_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>5E4DA9E9-2AFB-58CD-B40D-F80C2028D88A</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DD79EDC-BCAA-8426-0F26-379E4369B150"/>
+<colUsage columnID="CEAFA6ED-29D4-49A5-2391-76DD976B09F3"/>
+<colUsage columnID="B1B804F8-AA7F-CE22-9216-77B54DBFBDCD"/>
+<colUsage columnID="BF520131-1492-85D0-45BE-A12951CD6912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F01C4E0-C9E5-182F-12D6-1BA0844C9825" name="Con_Ser_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>DF8122A1-23A8-1CEC-3403-5FD6F8307A1F</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEAFA6ED-29D4-49A5-2391-76DD976B09F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C19C87B3-15AE-3FCB-3400-643F741DE5D8" name="Con_Usu_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>294DB477-A538-A71B-85B9-596E01170697</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DD79EDC-BCAA-8426-0F26-379E4369B150"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

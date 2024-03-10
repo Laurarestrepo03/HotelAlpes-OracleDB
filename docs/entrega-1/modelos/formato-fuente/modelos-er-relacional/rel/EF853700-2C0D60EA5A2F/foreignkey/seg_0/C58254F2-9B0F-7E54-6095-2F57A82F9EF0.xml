@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C58254F2-9B0F-7E54-6095-2F57A82F9EF0" containerWithKeyObject="A4150ABF-63FB-10C3-031A-27663420D17A" localFKIndex="0364EB02-CED7-5B37-C2B1-13202C42531A" name="Res_Hot_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>328FECD7-8DBF-5FA3-C419-7FBFA0F7C502</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<referredTableLongName>Hoteles</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>682E55EE-08BF-AC87-8D70-F3179423F93C</referredTableID>
+<keyObject>DEB0E27F-96D8-2203-4070-A872F20D245F</keyObject>
+<referredKeyID>DEB0E27F-96D8-2203-4070-A872F20D245F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NIT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Ser_Tipos_FK" directorySegmentName="seg_0" id="0E724CBA-FD9B-BC27-EDDE-656E1D0CAB6E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>E3248130-D11D-053D-F4E0-9270A2CB07AF</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>EA90DE1D-EE2D-998F-74AE-11B78A4DB47B</sourcePk>
+<dominantRole>32835E1D-EC14-84F5-A22E-27B30A720568</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32835E1D-EC14-84F5-A22E-27B30A720568</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>34DEF6A2-FB5E-5480-4F30-3330DEF69500</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

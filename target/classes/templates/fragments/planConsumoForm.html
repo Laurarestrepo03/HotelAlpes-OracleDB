@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmento</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div th:fragment="planConsumoForm(titulo)" class="container w-25 mt-4">
+        <h1 class="text-center" th:text="${titulo}"></h1>
+        <form>
+            <label class="col-form-label" for="tipo">Tipo de plan</label>
+            <select class="form-control"  id="tipo" name="tipo" required>
+                <th:block th:each="tipo : ${tiposPlan}">
+                    <option th:value="${tipo.id_tipo}" th:text="${tipo.nombre}" th:selected="${planConsumo !=null and 
+                        planConsumo.pk != null and planConsumo.pk.tipo.id_tipo == tipo.id_tipo}"></option>
+                </th:block>
+                <span th:text="${plan_consumo !=null and 
+                    plan_consumo.pk != null and plan_consumo.pk}"></span>
+            </select>
+          
+            
+            <label class="col-form-label">¿Genera descuento total?</label>
+            <select class="form-control" id="genera_descuento"
+            name="genera_descuento" required> 
+                <option value="Y" th:selected="${planConsumo.genera_descuento eq 'Y'}">Sí</option>
+                <option value="N" th:selected="${planConsumo.genera_descuento eq 'N'}">No</option>
+            </select> 
+
+            <label class="col-form-label">Tiempo de estadía</label>
+            <input class="form-control" type="number" id="tiempo_estadia"
+            name="tiempo_estadia" required th:value="${planConsumo.tiempo_estadia}" />
+            
+            <label class="col-form-label">Valor de descuento de servicio comercial</label>
+            <input class="form-control" type="number" id="valor_descuento_ser"
+            name="valor_descuento_ser" required th:value="${planConsumo.valor_descuento_ser}" />
+
+            <br>
+
+            <div class="text-center mb-4">
+                <a th:href="@{/planesConsumo(rol=${param.rol})}" class="btn btn-primary mr-1">Cancelar</a>
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

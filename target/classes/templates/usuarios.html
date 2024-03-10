@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="mt-4 mb-4">Usuarios</h1>
+        <div class="mb-4">
+            <a th:href="@{usuarios/buenosClientes(rol=${param.rol})}" class="btn btn-info mr-1">Buenos clientes</a>
+            <a th:if="${#strings.trim(param.rol) == '5'}" th:href="@{usuarios/clientesExcelentes(rol=${param.rol})}" class="btn btn-info">Clientes excelentes</a>
+        </div>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Número de documento</th>
+                    <th>Tipo de documento</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Tipo de usuario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <th:block th:each="usuario:${usuarios}">
+                <tr>
+                    <td th:text="${usuario.num_documento}"></td>
+                    <td th:text="${usuario.tipo_documento}"></td>
+                    <td th:text="${usuario.nombre}"></td>
+                    <td th:text="${usuario.correo}"></td>
+                    <td th:text="${usuario.tipo.nombre}"></td>
+                    <td>
+                        <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{usuarios/{num_documento}/edit(num_documento=${usuario.num_documento}, rol=${param.rol})}">Editar</a>
+                        <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{usuarios/{num_documento}/delete(num_documento=${usuario.num_documento}, rol=${param.rol})}"
+                        onClick="return confirm('¿Estás seguro de borrar este usuario?')">Borrar</a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4 mb-4">
+            <a th:href="@{/menu(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+            <a th:if="${#strings.trim(param.rol) == '4'}" th:href="@{usuarios/new(rol=${param.rol})}" class="btn btn-primary">Añadir usuario</a>
+        </div>
+    </div>
+    
+</body>
+</html>

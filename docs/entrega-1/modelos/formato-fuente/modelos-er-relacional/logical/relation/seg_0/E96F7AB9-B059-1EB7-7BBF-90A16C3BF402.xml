@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Plan_Dis_Hot_FK" directorySegmentName="seg_0" id="E96F7AB9-B059-1EB7-7BBF-90A16C3BF402">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>0223C0A5-F464-D32C-73A5-4201EE74FE4D</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>D0C9792F-B026-5AD5-8F20-F07782B19758</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC9381BA-4347-E39A-C34B-062A9EA79ACA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2E51BA93-9E02-0318-0E5D-9D5B1F9FD066</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

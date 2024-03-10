@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usu_Hot_FK" directorySegmentName="seg_0" id="DC158898-81C6-1990-71CF-8E1D1C8D0AB7">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-07 01:06:18 UTC</createdTime>
+<generatorID>B4A1C189-9599-3173-F0BD-B0688E80DAB3</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>D0C9792F-B026-5AD5-8F20-F07782B19758</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC9381BA-4347-E39A-C34B-062A9EA79ACA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5C4E6523-FF63-648A-2247-9A8F03961A6A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

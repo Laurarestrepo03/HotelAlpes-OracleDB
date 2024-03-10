@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DotIn_Dot_FK" directorySegmentName="seg_0" id="1F191010-BD5D-46C7-5875-EDD1A4767E78">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 20:37:06 UTC</createdTime>
+<generatorID>F1319A72-D255-CE02-8041-F27F3CA66302</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<engineerTo>
+<item key="EF853700-F6A4-770D-2D0E-2C0D60EA5A2F" value="true"/>
+</engineerTo>
+<sourcePk>2E749B7D-CEA4-9058-9B12-A6E638371F5D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3A8F3A08-F56D-62F1-E413-0B255253479A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ED954937-AD3A-1466-DBD9-9581E1A622AC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" text="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="mt-4 mb-4">Reservas</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Código</th>
+                    <th>Fecha entrada</th>
+                    <th>Fecha salida</th>
+                    <th>Número de huéspedes</th>
+                    <th>Estado</th>
+                    <th>Cliente</th>
+                    <th>Habitacion</th>
+                    <th>Plan consumo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <th:block th:each="reserva:${reservas}">
+                <tr>
+                    <td th:text="${reserva.codigo_reserva}"></td>
+                    <td th:text="${reserva.fecha_entrada}"></td>
+                    <td th:text="${reserva.fecha_salida}"></td>
+                    <td th:text="${reserva.num_huespedes}"></td>
+                    <td th:text="${reserva.estado}"></td>
+                    <td th:text="${reserva.cliente_reserva.num_documento}"></td>
+                    <td th:text="${reserva.habitacion.num_habitacion}"></td>
+                    <td th:text="${reserva.plan_consumo.pk.tipo.nombre}"></td>
+                    <td>
+                        <a th:if="${#strings.trim(param.rol) == '2'}" th:href="@{reservas/{codigo_reserva}/edit(codigo_reserva=${reserva.codigo_reserva}, rol=${param.rol})}">Editar</a>
+                        <a th:if="${#strings.trim(param.rol) == '1'}" th:href="@{reservas/{codigo_reserva}/delete(codigo_reserva=${reserva.codigo_reserva}, rol=${param.rol})}"
+                        onClick="return confirm('¿Estás seguro de borrar esta reserva?')">Borrar</a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div class="mt-4 mb-4">
+            <a th:href="@{/menu(rol=${param.rol})}" class="btn btn-primary mr-1">Volver atrás</a>
+            <a th:if="${#strings.trim(param.rol) == '1'}" th:href="@{reservas/new(rol=${param.rol})}" class="btn btn-primary">Añadir reserva</a>
+        </div>
+    </div>
+    
+</body>
+</html>

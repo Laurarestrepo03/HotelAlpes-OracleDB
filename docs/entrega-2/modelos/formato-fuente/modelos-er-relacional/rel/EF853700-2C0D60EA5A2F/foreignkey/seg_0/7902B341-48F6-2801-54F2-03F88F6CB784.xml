@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7902B341-48F6-2801-54F2-03F88F6CB784" containerWithKeyObject="068DBF95-6C97-A019-6101-87E08A5A286E" localFKIndex="9D9A1DA9-04FB-D55A-3B34-669F82033104" name="Usu_Tipos_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-02 14:16:48 UTC</createdTime>
+<generatorID>61C21137-2055-B6CA-8444-F3D33C6EA176</generatorID>
+<ownerDesignName>modelos-er-relacional</ownerDesignName>
+<referredTableLongName>Tipos_Usuario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4518DC2E-632D-FD64-EE48-C052FCE46703</referredTableID>
+<keyObject>FB420739-2101-F49A-86B8-CD0BF7FD1454</keyObject>
+<referredKeyID>FB420739-2101-F49A-86B8-CD0BF7FD1454</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
