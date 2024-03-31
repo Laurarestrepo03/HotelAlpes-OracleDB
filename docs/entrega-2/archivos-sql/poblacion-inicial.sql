@@ -117,7 +117,7 @@ insert into tipos_usuario (id_tipo, nombre) values (id_tipo_usuario.nextval, 'Ge
 
 --Usuarios
 insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1009', 'CC', 'Valentina', 'v.arenas@uniandes.edu.co', 1);
-insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1006', 'CC', 'Laura', 'l.esptrepop@uniandes.edu.co', 1);
+insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1006', 'CC', 'Laura', 'l.restrepop@uniandes.edu.co', 1);
 insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1007', 'CC', 'Catalina', 'c.espitia@uniandes.edu.co', 1);
 insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1008', 'CC', 'Sergio', 's.cifuentes@uniandes.edu.co', 1);
 insert into usuarios (num_documento, tipo_documento, nombre, correo, tipo) values ('1012', 'CC', 'Lindsay', 'l.pinto@uniandes.edu.co', 2);
